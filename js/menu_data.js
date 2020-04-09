@@ -1,3 +1,13 @@
+/* global np,
+          $dlgAbout,
+          $menubar,
+          $statusBar,
+          $editor,
+          $dlgFont,
+          $dlgSearch,
+          $dlgReplace,
+          $dlgGoto: true */
+/* eslint no-console: ["error", { allow: ["log"]  }] */
 np.menuData = [
   { 
     title: '文件(F)',
@@ -109,14 +119,14 @@ np.menuData = [
         title: '使用 Bing 搜索...',
         shortcut: 'Ctrl+E',
         enabled: true,
-        handler: function(){console.log('使用bing搜索')}
+        handler: function(){console.log('使用bing搜索');}
       },
       {
         title: '查找(F)...',
         shortcut: 'Ctrl+F',
         enabled: false,
         handler: function() {
-        console.log('查找')
+          console.log('查找');
         }
       },
       {
@@ -130,7 +140,7 @@ np.menuData = [
         shortcut: 'Ctrl+H',
         enabled: true,
         handler: function() {
-          console.log('替换')
+          console.log('替换');
         }
       },
       {
@@ -138,8 +148,8 @@ np.menuData = [
         shortcut: 'Ctrl+G',
         enabled: true,
         handler: function() {
-          console.log('转到')
-         }
+          console.log('转到');
+        }
       },
       {
         title: 'hr',
@@ -151,13 +161,13 @@ np.menuData = [
         title: '全选(A)',
         shortcut: 'Ctrl+A',
         enabled: true,
-        handler: function() {console.log('全选')}
+        handler: function() {console.log('全选');}
       },
       {
         title: '时间/日期(D)',
         shortcut: 'F5',
         enabled: true,
-        handler: function() {console.log('时间')}
+        handler: function() {console.log('时间');}
       },
     ],
     width: '218px',
@@ -238,7 +248,7 @@ np.menuData = [
         title: '关于记事本(A)',
         shortcut: '',
         enabled: true,
-        handler: function() { console.log('关于') }
+        handler: function() { console.log('关于');}
       },
     ],
     width: '166px',

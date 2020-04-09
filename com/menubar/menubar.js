@@ -1,8 +1,9 @@
+/* exported $menubar*/
 var $menubar = (function(){
   var $bar =$('<div class="notepad-menubar"></div>');
   
   var menuData,//所有菜单数据
-    menus=[];  //存放五个下拉菜单的DOM对象
+      menus=[];  //存放五个下拉菜单的DOM对象
   /**
    * 下拉菜单是否展开，没有展开：-1
    * 其余0-4按顺序
@@ -12,7 +13,7 @@ var $menubar = (function(){
     var $titles = $('<ul class="menu-title"></ul>');
 
     for(var i=0;i<menuData.length;i++){
-      var $title = $('<li class="title"></li>')
+      var $title = $('<li class="title"></li>');
       $title.html(menuData[i].title);
       $title.attr('data-id',i);
       $titles.append($title);
@@ -65,9 +66,9 @@ var $menubar = (function(){
         $menu.attr('data-y',j);
 
         if(items[j].shortcut !==''){
-         var $shortcut= $('<span class="shortcut"></span>');
-         $shortcut.html(items[j].shortcut);
-         $menu.append($shortcut);
+          var $shortcut= $('<span class="shortcut"></span>');
+          $shortcut.html(items[j].shortcut);
+          $menu.append($shortcut);
         }
 
         if(!items[j].enabled) $menu.addClass('disabled');
@@ -139,7 +140,6 @@ var $menubar = (function(){
 
   function show(data){
     menuData = data;
-    console.log(menuData);
     createMeunTitle();
     createMenus();
 
