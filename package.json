@@ -18,7 +18,7 @@
     "grunt-usemin": "^3.1.1"
   },
   "scripts": {
-    "test": "grunt lint",
+    //"test": "grunt lint",
     "build": "grunt build"
   },
   "repository": {
