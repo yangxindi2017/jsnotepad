@@ -2,7 +2,6 @@
   "name": "jsnotepad",
   "version": "1.0.0",
   "description": "利用模块化等实现类似记事本工具",
-  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "grunt": "^1.1.0",
@@ -10,12 +9,12 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-csslint": "^2.0.0",
-    "grunt-eslint": "^21.0.0",
-    "grunt-htmlhint": "^0.9.13",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-uglify": "^3.3.0",
+    "grunt-eslint": "^21.0.0",
+    "grunt-htmlhint": "^0.9.13",
     "grunt-usemin": "^3.1.1"
   },
   "scripts": {
@@ -26,9 +25,8 @@
     "type": "git",
     "url": "git+https://github.com/yangxindi2017/jsnotepad.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "yangxindi",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yangxindi2017/jsnotepad/issues"
   },
